@@ -1,0 +1,30 @@
+янв. 25, 2021 8:19:21 PM by.tc.task04.controller.FileController OpenInputOutputStreams
+SEVERE: I / O error when opening an stream
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:981)
+	at java.base/java.io.ObjectInputStream$PeekInputStream.read(ObjectInputStream.java:2914)
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2930)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:3427)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:962)
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:405)
+	at by.tc.task04.controller.FileController.OpenInputOutputStreams(FileController.java:74)
+	at by.tc.task04.controller.FileController.request(FileController.java:30)
+	at by.tc.task04.client.Client.main(Client.java:28)
+
+янв. 25, 2021 8:19:22 PM by.tc.task04.controller.FileController request
+SEVERE: I / O error
+java.net.SocketException: Connection reset by peer
+	at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:420)
+	at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:440)
+	at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:826)
+	at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1051)
+	at java.base/java.io.ObjectOutputStream$BlockDataOutputStream.writeBlockHeader(ObjectOutputStream.java:1906)
+	at java.base/java.io.ObjectOutputStream$BlockDataOutputStream.drain(ObjectOutputStream.java:1891)
+	at java.base/java.io.ObjectOutputStream$BlockDataOutputStream.flush(ObjectOutputStream.java:1838)
+	at java.base/java.io.ObjectOutputStream.flush(ObjectOutputStream.java:726)
+	at by.tc.task04.controller.FileController.request(FileController.java:33)
+	at by.tc.task04.client.Client.main(Client.java:28)
+

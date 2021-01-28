@@ -1,0 +1,26 @@
+Look more closely at one of the simplest Java programs you can have—one that merely prints a message to console.
+
+public class FirstSample {
+    	public static void main(String[] args) {
+    		System.out.println("We will not use 'Hello, World!'");
+    	}
+}
+
+It is worth spending all the time you need to become comfortable with the framework of this sample; the pieces will recur in all applications. First and foremost, Java is case sensitive. If you made any mistakes in capitalization (such as typing Main instead of main), the program will not run.
+
+package by.epam_training.homework02.service;
+
+import by.epam_training.homework02.entity.Appliance;
+import by.epam_training.homework02.entity.criteria.Criteria;
+
+import java.io.IOException;
+import java.util.List;
+
+public interface ApplianceService {
+
+    List<Appliance> find(Criteria criteria) throws IOException;
+
+}
+
+Your code may run into a problem which is not adequately described by any of the standard exception classes. In this case, it is easy enough to create your own exception class. Just derive it from Exception, or from a child class of Exception such as IOException. It is customary to give both a default constructor and a constructor that contains a detailed message. Do you want to learn Java fundamentals?
+

@@ -1,0 +1,10 @@
+янв. 26, 2021 12:24:02 PM by.tc.task04.controller.FileController request
+SEVERE: I / O error
+java.io.EOFException
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:3231)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1663)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:519)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:477)
+	at by.tc.task04.controller.FileController.request(FileController.java:36)
+	at by.tc.task04.client.Client.main(Client.java:28)
+
